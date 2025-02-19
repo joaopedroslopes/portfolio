@@ -5,7 +5,7 @@
 - Seções para exibir informações pessoais, currículo, projetos e detalhes de contato.
 
 ## Link do site no Vercel
-https://portifolio-omega-woad.vercel.app/
+https://portfolio-joao-pedro-lopes-projects.vercel.app/
 
 ## Tecnologias Utilizadas
 - React
