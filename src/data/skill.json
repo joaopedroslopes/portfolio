@@ -1,0 +1,53 @@
+{
+    "Front-End": [
+      {
+        "name": "React",
+        "logo": "/images/skills/react.png"
+      },
+      {
+        "name": "TailWind",
+        "logo": "/images/skills/tailwind.png"
+      },
+      {
+        "name": "Figma",
+        "logo": "/images/skills/figma.png"
+      },
+      {
+        "name": "Bootstrap",
+        "logo": "/images/skills/bootstrap.png"
+      },
+      {
+        "name": "JavaScript",
+        "logo": "/images/skills/js.png"
+      }
+    ],
+    "Back-End": [
+      {
+        "name": "Python",
+        "logo": "/images/skills/py.png"
+      },
+      {
+        "name": "Java",
+        "logo": "/images/skills/java.png"
+      },
+      {
+        "name": "C",
+        "logo": "/images/skills/c.png"
+      },
+      {
+        "name": "NodeJS",
+        "logo": "/images/skills/node.png"
+      }
+    ],
+    "Platforms & Technologies": [
+      {
+        "name": "Git",
+        "logo": "/images/skills/git.png"
+      },
+      {
+        "name": "SQL",
+        "logo": "/images/skills/sql.png"
+      }
+    ]
+  }
+  

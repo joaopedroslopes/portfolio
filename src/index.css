@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+    --color-dark-purple: #18061c;
+    --color-lighter-darker-purple: #2f1536;
+    --color-medium-purple: #890c94;
+    --color-medium-darker-purple: #630b6b;
+    --color-dark-hover: #19191a;
+    --color-light-hover: #4e3754;
+    --color-bdr: rgb(55, 65, 81);
+    --color-tag-grey: #4A5568;
+}
+
+/* ----- SKILLS DIV GRID ----- */
+
+.grid-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 640px) {
+    .grid-skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .grid-skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 13000px) {
+    .grid-skills {
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
+
+@media (min-width: 1400px) {
+    .grid-skills {
+        grid-template-columns: repeat(11, 1fr);
+    }
+}
+
+/* ----- HOME ANIMATION ----- */
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(14deg); }
+    20% { transform: rotate(-8deg); }
+    30% { transform: rotate(14deg); }
+    40% { transform: rotate(-4deg); }
+    50% { transform: rotate(10deg); }
+    60% { transform: rotate(0deg); }
+}
+
+.animate-waving-hand {
+    display: inline-block;
+    animation: wave 2s infinite;
+    transform-origin: 70% 70%;
+}
+
+.typing {
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
