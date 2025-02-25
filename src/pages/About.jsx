@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { FaLink } from 'react-icons/fa';
+import skillsData from '/src/data/skill.json';
 
 // import '../style/about.css'
 
 function About() {
-    const [skillsData, setSkillsData] = useState({});
+    const [skills, setSkillsData] = useState({});
 
     useEffect(() => {
-        fetch('src/data/skill.json')
-            .then(response => response.json())
-            .then(data => setSkillsData(data))
-            .catch(error => console.error('Error loading skills:', error));
+        setSkillsData(skillsData)
     }, []);
 
     return (
@@ -121,11 +119,11 @@ function About() {
             </h2>
             <section className="bg-lighter-darker-purple/80 backdrop-blur-[10px] rounded-[10px] p-5 mb-10 cursor-default">
                 <div className="grid gap-6">
-                    {Object.keys(skillsData).map(category => (
+                    {Object.keys(skills).map(category => (
                         <div key={category} className="mb-5">
                             <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">{category}</h3>
                             <div className="grid-skills gap-2">
-                                {skillsData[category].map(skill => (
+                                {skills[category].map(skill => (
                                     <div className="w-[100px] flex flex-col items-center bg-dark-purple/60 px-2 py-4 rounded-lg shadow-md hover:shadow-lg transition transform duration-300 hover:-translate-y-2">
                                         <img src={skill.logo} alt={skill.name} className="w-8 h-8 mb-1 object-contain" />
                                         <span className="text-center text-gray-900 dark:text-white text-sm">{skill.name}</span>
