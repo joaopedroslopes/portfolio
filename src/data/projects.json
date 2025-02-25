@@ -18,5 +18,15 @@
             {"link": "https://github.com/joaopedroslopes/niver-mae"},
             {"link": "https://joaopedroslopes.github.io/niver-mae/"}
         ]
+    },
+    {
+        "title": "Formula E WebSite",
+        "description": "Project created for the Fiap Formula E challenge, works as a prototype and brings a new visual identity to the brand, in addition to a dynamic calendar and news cards",
+        "image": "/images/projects/formulae.PNG",
+        "tags": ["React", "Tailwind"],
+        "buttons": [
+            {"link": "https://github.com/joaopedroslopes/sprint3-webdev.git"},
+            {"link": "https://sprint3-webdev.vercel.app/"}
+        ]
     }
 ]

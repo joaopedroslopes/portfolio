@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { FaGithub, FaPlay, FaSearch } from "react-icons/fa";
+import cardProps from '/src/data/projects.json';
 
 function Projects() {
-    const [cardProps, setCardProps] = useState([]);
+    const [cards, setCard] = useState([]);
 
     useEffect(() => {
-        fetch('/src/data/projects.json')
-            .then(response => response.json())
-            .then(data => setCardProps(data))
-            .catch(error => console.error('Error loading skills:', error));
+        setCard(cardProps)
     }, []);
 
     return (
@@ -20,7 +18,7 @@ function Projects() {
             </div> */}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                {cardProps.map(({ title, description, tags, buttons, image }) => (
+                {cards.map(({ title, description, tags, buttons, image }) => (
                     <div className="w-full max-w-sm bg-lighter-darker-purple/80 border border-bdr rounded-lg shadow p-4 flex flex-col items-start place-self-center sm:place-self-auto" key={title}>
                         <h2 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{title}</h2>
                         <p className="text-gray-700 dark:text-gray-400 mb-4">{description}</p>

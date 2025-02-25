@@ -5,10 +5,10 @@ import skillsData from '/src/data/skill.json';
 // import '../style/about.css'
 
 function About() {
-    const [skills, setSkillsData] = useState({});
+    const [skills, setSkills] = useState({});
 
     useEffect(() => {
-        setSkillsData(skillsData)
+        setSkills(skillsData)
     }, []);
 
     return (
